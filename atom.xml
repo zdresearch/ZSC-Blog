@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2015-07-26T09:15:05-04:00</updated>
-  <id>http://yoursite.com/</id>
+  <title><![CDATA[ZSC | ZCR Shellcoder]]></title>
+  <link href="http://zsc.z3r0d4y.com/atom.xml" rel="self"/>
+  <link href="http://zsc.z3r0d4y.com/"/>
+  <updated>2015-07-26T10:27:02-04:00</updated>
+  <id>http://zsc.z3r0d4y.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
-    
+    <name><![CDATA[Ali Razmjoo]]></name>
+    <email><![CDATA[Ali[at]Z3r0D4y[dot]Com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
