@@ -4,7 +4,7 @@
   <title><![CDATA[ZSC | ZCR Shellcoder]]></title>
   <link href="http://zsc.z3r0d4y.com/atom.xml" rel="self"/>
   <link href="http://zsc.z3r0d4y.com/"/>
-  <updated>2015-07-26T10:27:02-04:00</updated>
+  <updated>2015-07-26T12:45:11-04:00</updated>
   <id>http://zsc.z3r0d4y.com/</id>
   <author>
     <name><![CDATA[Ali Razmjoo]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Tricks]]></title>
+    <link href="http://zsc.z3r0d4y.com/blog/2015/07/26/tricks/"/>
+    <updated>2015-07-26T12:44:52-04:00</updated>
+    <id>http://zsc.z3r0d4y.com/blog/2015/07/26/tricks</id>
+    <content type="html"><![CDATA[<p>hello guys</p>
+]]></content>
+  </entry>
   
 </feed>
