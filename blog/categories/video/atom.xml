@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[ZSC | ZCR Shellcoder]]></title>
-  <link href="http://zsc.z3r0d4y.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Video | ZSC | ZCR Shellcoder]]></title>
+  <link href="http://zsc.z3r0d4y.com/blog/categories/video/atom.xml" rel="self"/>
   <link href="http://zsc.z3r0d4y.com/"/>
   <updated>2015-07-27T18:34:59+04:30</updated>
   <id>http://zsc.z3r0d4y.com/</id>
