@@ -4,7 +4,7 @@
   <title><![CDATA[ZSC | ZCR Shellcoder]]></title>
   <link href="http://zsc.z3r0d4y.com/atom.xml" rel="self"/>
   <link href="http://zsc.z3r0d4y.com/"/>
-  <updated>2015-07-27T16:10:09+04:30</updated>
+  <updated>2015-07-27T17:56:50+04:30</updated>
   <id>http://zsc.z3r0d4y.com/</id>
   <author>
     <name><![CDATA[Ali Razmjoo]]></name>
@@ -16,12 +16,12 @@
   <entry>
     <title type="html"><![CDATA[Video: How to Install and Generate Shellcode Using ZSC]]></title>
     <link href="http://zsc.z3r0d4y.com/blog/2015/07/27/video-how-to-install-and-generate-shellcode-using-zsc/"/>
-    <updated>2015-07-27T14:24:24+04:30</updated>
+    <updated>2015-07-27T00:00:00+04:30</updated>
     <id>http://zsc.z3r0d4y.com/blog/2015/07/27/video-how-to-install-and-generate-shellcode-using-zsc</id>
     <content type="html"><![CDATA[<p>Watch the video to start with ZCR Shellcoder.
 <br><br></p>
 
-<center><video  preload='metadata' controls ><source src='http://zsc.z3r0d4y.com/images/How%20to%20Install%20and%20Generate%20Shellcode%20Using%20ZSC.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video> <br> <a href="https://www.youtube.com/watch?v=x2XW2WKGBLI">Youtube</a></center>
+<center>Error processing input, expected syntax: {% video url/to/video [url/to/video] [url/to/video] [width height] [url/to/poster] %} <br> <a href="https://www.youtube.com/watch?v=x2XW2WKGBLI">Youtube</a></center>
 
 
 <p><br><h3>Refrence</h3>
