@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Video | ZSC | ZCR Shellcoder]]></title>
   <link href="http://zsc.z3r0d4y.com/blog/categories/video/atom.xml" rel="self"/>
   <link href="http://zsc.z3r0d4y.com/"/>
-  <updated>2015-07-28T13:34:57+04:30</updated>
+  <updated>2015-07-28T20:06:10+04:30</updated>
   <id>http://zsc.z3r0d4y.com/</id>
   <author>
     <name><![CDATA[Ali Razmjoo]]></name>
@@ -18,8 +18,8 @@
     <link href="http://zsc.z3r0d4y.com/blog/2015/07/27/video-how-to-install-and-generate-shellcode-using-zsc/"/>
     <updated>2015-07-27T00:00:00+04:30</updated>
     <id>http://zsc.z3r0d4y.com/blog/2015/07/27/video-how-to-install-and-generate-shellcode-using-zsc</id>
-    <content type="html"><![CDATA[<p>Watch the video to start with ZCR Shellcoder.
-Sorry video will upload soon
+    <content type="html"><![CDATA[<p>Watch the video to learn how generate shellcode with ZCR Shellcoder.
+<br><center><video  preload='metadata' controls ><source src='http://zsc.z3r0d4y.com/images/How%20to%20Install%20and%20Generate%20Shellcode%20Using%20ZSC.mp4">http://zsc.z3r0d4y.com/images/How%20to%20Install%20and%20Generate%20Shellcode%20Using%20ZSC.mp4</a>' ></video></center>
 <br><h3>Refrence</h3>
 <a href="http://wwww.z3r0d4y.com">ZeroDay Cyber Research</a>
 <br><a href="http://zsc.z3r0d4y.com">ZSC Home</a>
