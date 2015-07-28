@@ -9,7 +9,7 @@
   <meta name="author" content="Ali Razmjoo">
 
   
-  <meta name="description" content="Wiki Installation Go to download page, and download last version in github. Extract and run installer.py, then you are able to run software with zsc &hellip;">
+  <meta name="description" content="Wiki Installation Go to download page, and download last version in github. Extract and run installer.py, then you are able to run software with ZSC &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -90,7 +90,7 @@
   <h2>Installation</h2>
 
 
-<p>Go to download page, and download last version in github. Extract and run installer.py, then you are able to run software with <strong>zsc</strong> command or you can directly execute <strong>zsc.py</strong> without installing it.or you can follow these commands to install the last version:</p>
+<p>Go to download page, and download last version in github. Extract and run installer.py, then you are able to run software with <strong>ZSC</strong> command or you can directly execute <strong>zsc.py</strong> without installing it.or you can follow these commands to install the last version:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>wget https://github.com/Ali-Razmjoo/ZCR-Shellcoder/archive/master.zip -O zcr-shellcoder.zip <span class="o">&amp;&amp;</span> unzip zcr-shellcoder.zip <span class="o">&amp;&amp;</span> rm -rf zcr-shellcoder.zip <span class="o">&amp;&amp;</span> mv ZCR-Shellcoder-master ZCR-Shellcoder <span class="o">&amp;&amp;</span> <span class="nb">cd </span>ZCR-Shellcoder <span class="o">&amp;&amp;</span> python installer.py
@@ -104,7 +104,7 @@
 <br><strong>Note</strong>: Software installation directory is &ldquo;<strong>/usr/share/zcr-shellcoder</strong>&rdquo;
 <br></p>
 
-<h2>How to generate shellcode with zsc?</h2>
+<h2>How to generate shellcode with ZSC?</h2>
 
 
 <p>At first look the help menu.</p>
@@ -466,7 +466,7 @@ Code result: <strong>shellcode.c</strong></p>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>as you can see in output code &ldquo;<strong>shellcode.c</strong>&rdquo; you are able to compile and test shellcode with this command:</p>
+<p>As you can see in output code &ldquo;<strong>shellcode.c</strong>&rdquo; you are able to compile and test shellcode with this command:</p>
 
 <figure class='code'><figcaption><span>shellcode.c</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">gcc</span> <span class="o">-</span><span class="n">ggdb</span> <span class="o">-</span><span class="k">static</span> <span class="o">-</span><span class="n">fno</span><span class="o">-</span><span class="n">stack</span><span class="o">-</span><span class="n">protector</span> <span class="o">-</span><span class="n">z</span> <span class="n">execstack</span> <span class="o">-</span><span class="n">mpreferred</span><span class="o">-</span><span class="n">stack</span><span class="o">-</span><span class="n">boundary</span><span class="o">=</span><span class="mi">2</span> <span class="o">-</span><span class="n">o</span> <span class="n">shellcode</span> <span class="n">shellcode</span><span class="p">.</span><span class="n">c</span>
