@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://zsc.z3r0d4y.com/blog/2015/08/01/generate-pe-file-with-zsc-shellcodes/</loc>
+    <lastmod>2015-08-01T15:10:18+04:30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://zsc.z3r0d4y.com/blog/2015/07/27/video-how-to-install-and-generate-shellcode-using-zsc/</loc>
     <lastmod>2015-07-27T00:00:00+04:30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://zsc.z3r0d4y.com/blog/archives/</loc>
-    <lastmod>2015-07-28T20:06:10+04:30</lastmod>
+    <lastmod>2015-08-01T16:55:00+04:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://zsc.z3r0d4y.com/</loc>
-    <lastmod>2015-07-28T20:06:10+04:30</lastmod>
+    <lastmod>2015-08-01T16:55:00+04:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://zsc.z3r0d4y.com/blog/</loc>
-    <lastmod>2015-07-28T20:06:10+04:30</lastmod>
+    <lastmod>2015-08-01T16:55:00+04:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://zsc.z3r0d4y.com/download/</loc>
-    <lastmod>2015-07-28T20:06:10+04:30</lastmod>
+    <lastmod>2015-08-01T16:55:00+04:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://zsc.z3r0d4y.com/developers/</loc>
-    <lastmod>2015-07-28T20:06:10+04:30</lastmod>
+    <lastmod>2015-08-01T16:55:00+04:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://zsc.z3r0d4y.com/wiki/</loc>
-    <lastmod>2015-07-28T20:06:10+04:30</lastmod>
+    <lastmod>2015-08-01T16:55:00+04:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

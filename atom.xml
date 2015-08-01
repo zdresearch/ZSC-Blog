@@ -4,7 +4,7 @@
   <title><![CDATA[ZSC | ZCR Shellcoder]]></title>
   <link href="http://zsc.z3r0d4y.com/atom.xml" rel="self"/>
   <link href="http://zsc.z3r0d4y.com/"/>
-  <updated>2015-07-28T20:06:10+04:30</updated>
+  <updated>2015-08-01T15:10:18+04:30</updated>
   <id>http://zsc.z3r0d4y.com/</id>
   <author>
     <name><![CDATA[Ali Razmjoo]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Generate PE File With ZSC Shellcodes]]></title>
+    <link href="http://zsc.z3r0d4y.com/blog/2015/08/01/generate-pe-file-with-zsc-shellcodes/"/>
+    <updated>2015-08-01T15:10:18+04:30</updated>
+    <id>http://zsc.z3r0d4y.com/blog/2015/08/01/generate-pe-file-with-zsc-shellcodes</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Video: How to Install and Generate Shellcode Using ZSC]]></title>
