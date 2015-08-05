@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Video | OWASP ZSC | OWASP ZCR Shellcoder]]></title>
   <link href="http://zsc.z3r0d4y.com/blog/categories/video/atom.xml" rel="self"/>
   <link href="http://zsc.z3r0d4y.com/"/>
-  <updated>2015-08-05T16:02:01+04:30</updated>
+  <updated>2015-08-05T16:32:43+04:30</updated>
   <id>http://zsc.z3r0d4y.com/</id>
   <author>
     <name><![CDATA[Ali Razmjoo]]></name>
@@ -19,14 +19,13 @@
     <updated>2015-07-27T00:00:00+04:30</updated>
     <id>http://zsc.z3r0d4y.com/blog/2015/07/27/video-how-to-install-and-generate-shellcode-using-zsc</id>
     <content type="html"><![CDATA[<p>Watch the video to learn how generate shellcode with ZCR Shellcoder.
-<br><center><video  preload='metadata' controls ><source src='http://zsc.z3r0d4y.com/images/How%20to%20Install%20and%20Generate%20Shellcode%20Using%20ZSC.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></center>
+<br><center><video  preload='metadata' controls ><source src='http://zsc.z3r0d4y.com/images/How%20to%20Install%20and%20Generate%20Shellcode%20Using%20ZSC.mp4">http://zsc.z3r0d4y.com/images/How%20to%20Install%20and%20Generate%20Shellcode%20Using%20ZSC.mp4</a>' ></video></center>
 <br><h3>References</h3>
 <a href="http://wwww.z3r0d4y.com">ZeroDay Cyber Research</a>
 <br><a href="http://zsc.z3r0d4y.com">OWASP ZSC Home</a>
 <br><a href="https://www.owasp.org/index.php/OWASP_ZSC_Tool_Project">OWASP Page</a>
 <br><a href="mailto:Ali[at]Z3r0D4y.Com">Ali Razmjoo</a>
 <br><br><br><br></p>
-
 ]]></content>
   </entry>
   
