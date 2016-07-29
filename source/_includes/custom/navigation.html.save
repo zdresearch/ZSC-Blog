@@ -1,0 +1,4 @@
+<ul class="main-navigation">
+  <li><a href="{{ root_url }}/">Blog</a></li>
+  <li><a href="http://www.z3r0d4.com/">ZCR Blog</a></li>
+</ul>

